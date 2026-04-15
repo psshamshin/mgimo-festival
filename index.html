@@ -51,14 +51,18 @@
       <img src="images/hero-bg.jpg" alt="" class="hero__bg-img" onerror="this.style.display='none'" />
     </div>
     <div class="hero__content container">
-      <div class="hero__badge">Под эгидой МГИМО МИД России</div>
-      <h1 class="hero__title">Фестиваль<br/>МГИМО</h1>
-      <p class="hero__subtitle">Площадка развития науки и технологий во всём мире и в МГИМО</p>
-      <div class="hero__date">28–29 мая 2025</div>
-      <div class="hero__location">МГИМО Одинцово · Новоспортивная, 3</div>
-      <div class="hero__actions">
-        <a href="#contacts" class="btn btn--primary">Принять участие</a>
-        <a href="#program"  class="btn btn--ghost">Программа</a>
+      <div class="hero__left">
+        <div class="hero__badge">Под эгидой МГИМО МИД России</div>
+        <h1 class="hero__title">Фестиваль<br/>МГИМО</h1>
+        <p class="hero__subtitle">Площадка развития науки и технологий во всём мире и в МГИМО</p>
+      </div>
+      <div class="hero__right">
+        <div class="hero__date">28–29 мая 2025</div>
+        <div class="hero__location">МГИМО Одинцово · Новоспортивная, 3</div>
+        <div class="hero__actions">
+          <a href="#contacts" class="btn btn--primary">Принять участие</a>
+          <a href="#program"  class="btn btn--ghost">Программа</a>
+        </div>
       </div>
     </div>
     <div class="hero__scroll" id="scrollHint">
@@ -75,15 +79,8 @@
         <div class="about__text">
           <h2 class="section__title">Описание</h2>
           <p class="about__lead">Международный фестиваль науки и технологий — ежегодное событие, объединяющее студентов, учёных, предпринимателей и экспертов со всего мира на площадке МГИМО Одинцово.</p>
-          <p class="about__body">Фестиваль проводится при финансовой поддержке <strong>Фонда Эндаумента МГИМО</strong> и направлен на развитие научного и предпринимательского мышления среди молодёжи, поддержку исследовательских проектов и формирование профессиональных связей.</p>
+          <p class="about__body">Фестиваль направлен на развитие научного и предпринимательского мышления среди молодёжи, поддержку исследовательских проектов и формирование профессиональных связей.</p>
           <p class="about__body">Принять участие может любой желающий в возрасте от 18 лет — будь то студент, молодой учёный или начинающий предприниматель.</p>
-          <div class="about__endowment">
-            <div class="about__endowment-icon">&#9679;</div>
-            <div>
-              <strong>Финансирование</strong><br/>
-              Мероприятие организуется при поддержке <span class="accent">Фонда Эндаумента МГИМО МИД России</span>
-            </div>
-          </div>
         </div>
         <div class="about__goals">
           <h3 class="about__goals-title">Цели</h3>
@@ -125,6 +122,29 @@
           <div class="stat__num">10+</div>
           <div class="stat__label">стран-участниц</div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ENDOWMENT ============ -->
+  <section class="endowment">
+    <div class="endowment__inner">
+      <div class="endowment__icon-slot">
+        <img src="images/endowment-logo.png" alt="Фонд Эндаумента МГИМО" class="endowment__logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+        <div class="endowment__logo-placeholder">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <path d="M20 44V28l12-10 12 10v16" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <rect x="27" y="34" width="10" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M16 28h32" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <span>Логотип фонда</span>
+        </div>
+      </div>
+      <div class="endowment__body">
+        <div class="endowment__label">Финансирование</div>
+        <h2 class="endowment__title">Фонд Эндаумента МГИМО МИД России</h2>
+        <p class="endowment__text">Мероприятие организуется при финансовой поддержке Фонда Эндаумента МГИМО МИД России — некоммерческой организации, содействующей развитию науки, образования и международного сотрудничества.</p>
       </div>
     </div>
   </section>
