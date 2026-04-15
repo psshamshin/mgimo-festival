@@ -334,14 +334,27 @@ ul { list-style: none; }
   z-index: 2;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  gap: 48px;
+  gap: 40px;
+  padding-bottom: 12px;
 }
 
 .hero__left {
   flex: 1 1 0;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero__right {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding-bottom: 6px;
 }
 
 /* ---- Badge ---- */
@@ -378,84 +391,48 @@ ul { list-style: none; }
 
 /* ---- Title ---- */
 .hero__title {
-  font-size: clamp(52px, 7.5vw, 88px);
+  font-size: clamp(52px, 7.5vw, 92px);
   font-weight: 900;
   line-height: 1.0;
   letter-spacing: -0.03em;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   animation: fadeInUp 0.8s 0.2s both;
 }
 
 /* ---- Subtitle ---- */
 .hero__subtitle {
-  font-size: clamp(14px, 1.3vw, 16px);
+  font-size: 15px;
   color: var(--text-muted);
-  max-width: 420px;
+  max-width: 400px;
   margin-bottom: 36px;
-  line-height: 1.7;
+  line-height: 1.65;
   animation: fadeInUp 0.8s 0.3s both;
 }
 
-/* ---- CTAs — side by side in left column ---- */
+/* ---- CTAs ---- */
 .hero__actions {
   display: flex;
   flex-direction: row;
-  gap: 12px;
-  flex-wrap: wrap;
+  gap: 10px;
   animation: fadeInUp 0.8s 0.4s both;
 }
 
-/* ---- Right: event info card ---- */
-.hero__card {
-  flex: 0 0 280px;
-  width: 280px;
-  background: rgba(255,255,255,0.035);
-  border: 1px solid rgba(255,255,255,0.09);
-  border-radius: 20px;
-  padding: 32px 28px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  animation: fadeInUp 0.8s 0.35s both;
-}
-
-.hero__card-label {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--accent2);
-  margin-bottom: 12px;
+/* ---- Right: location + big date ---- */
+.hero__location {
+  font-size: 13px;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  animation: fadeInUp 0.8s 0.3s both;
 }
 
 .hero__date {
-  font-size: clamp(30px, 3vw, 40px);
+  font-size: clamp(56px, 7.5vw, 100px);
   font-weight: 900;
   color: var(--text);
-  letter-spacing: -0.03em;
-  line-height: 1.1;
-  margin-bottom: 0;
-}
-
-.hero__card-sep {
-  height: 1px;
-  background: rgba(255,255,255,0.07);
-  margin: 24px 0;
-}
-
-.hero__card-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  font-size: 13px;
-  color: var(--text-muted);
-  line-height: 1.5;
-}
-
-.hero__card-row svg {
-  flex-shrink: 0;
-  margin-top: 1px;
-  color: var(--accent2);
-  opacity: 0.7;
+  letter-spacing: -0.04em;
+  line-height: 1.0;
+  animation: fadeInUp 0.8s 0.4s both;
 }
 
 .hero__scroll {
@@ -1288,11 +1265,10 @@ ul { list-style: none; }
   .hero__content {
     flex-direction: column;
     align-items: flex-start;
-    gap: 32px;
+    gap: 40px;
   }
-  .hero__card { flex: 0 0 auto; width: 100%; }
-  .hero__actions { flex-direction: column; }
-  .hero__actions .btn { width: 100%; justify-content: center; }
+  .hero__right { width: 100%; }
+  .hero__date { font-size: clamp(52px, 14vw, 80px); }
   .hero__title { font-size: clamp(44px, 12vw, 72px); }
 
   /* Endowment: stack vertically */
