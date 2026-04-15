@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Фестиваль науки и технологий МГИМО</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">
+        <img src="images/logo.svg" alt="МГИМО" class="nav__logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+        <span class="nav__logo-fallback">
+          <span class="nav__logo-text">IT</span>
+          <span class="nav__logo-divider"></span>
+          <span class="nav__logo-sub">МГИМО</span>
+        </span>
+      </a>
+      <nav class="nav__links">
+        <a href="#about"    class="nav__link">Описание</a>
+        <a href="#program"  class="nav__link">Программа</a>
+        <a href="#gallery"  class="nav__link">Галерея</a>
+        <a href="#docs"     class="nav__link">Документы</a>
+        <a href="#faq"      class="nav__link">ЧаВо</a>
+        <a href="#contacts" class="nav__link">Контакты</a>
+      </nav>
+      <button class="nav__burger" aria-label="Меню" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#about"    class="nav__mobile-link">Описание</a>
+      <a href="#program"  class="nav__mobile-link">Программа</a>
+      <a href="#gallery"  class="nav__mobile-link">Галерея</a>
+      <a href="#docs"     class="nav__mobile-link">Документы</a>
+      <a href="#faq"      class="nav__mobile-link">ЧаВо</a>
+      <a href="#contacts" class="nav__mobile-link">Контакты</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__overlay"></div>
+      <img src="images/hero-bg.jpg" alt="" class="hero__bg-img" onerror="this.style.display='none'" />
+    </div>
+    <div class="hero__content container">
+      <div class="hero__badge">Под эгидой МГИМО МИД России</div>
+      <h1 class="hero__title">Фестиваль<br/>МГИМО</h1>
+      <p class="hero__subtitle">Площадка развития науки и технологий во всём мире и в МГИМО</p>
+      <div class="hero__date">28–29 мая 2025</div>
+      <div class="hero__location">МГИМО Одинцово · Новоспортивная, 3</div>
+      <div class="hero__actions">
+        <a href="#contacts" class="btn btn--primary">Принять участие</a>
+        <a href="#program"  class="btn btn--ghost">Программа</a>
+      </div>
+    </div>
+    <div class="hero__scroll" id="scrollHint">
+      <span>Прокрутите вниз</span>
+      <div class="hero__scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section__tag">О мероприятии</div>
+      <div class="about__grid">
+        <div class="about__text">
+          <h2 class="section__title">Описание</h2>
+          <p class="about__lead">Международный фестиваль науки и технологий — ежегодное событие, объединяющее студентов, учёных, предпринимателей и экспертов со всего мира на площадке МГИМО Одинцово.</p>
+          <p class="about__body">Фестиваль проводится при финансовой поддержке <strong>Фонда Эндаумента МГИМО</strong> и направлен на развитие научного и предпринимательского мышления среди молодёжи, поддержку исследовательских проектов и формирование профессиональных связей.</p>
+          <p class="about__body">Принять участие может любой желающий в возрасте от 18 лет — будь то студент, молодой учёный или начинающий предприниматель.</p>
+          <div class="about__endowment">
+            <div class="about__endowment-icon">&#9679;</div>
+            <div>
+              <strong>Финансирование</strong><br/>
+              Мероприятие организуется при поддержке <span class="accent">Фонда Эндаумента МГИМО МИД России</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__goals">
+          <h3 class="about__goals-title">Цели</h3>
+          <ul class="goals__list">
+            <li class="goals__item">
+              <span class="goals__num">01</span>
+              <span>Развитие науки и исследовательской культуры</span>
+            </li>
+            <li class="goals__item">
+              <span class="goals__num">02</span>
+              <span>Улучшение всех качеств участников: профессиональных, коммуникативных, лидерских</span>
+            </li>
+            <li class="goals__item">
+              <span class="goals__num">03</span>
+              <span>Получение новых компетенций и знакомство с передовыми технологиями</span>
+            </li>
+            <li class="goals__item">
+              <span class="goals__num">04</span>
+              <span>Формирование международного сообщества молодых учёных и предпринимателей</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat__num">2</div>
+          <div class="stat__label">дня мероприятий</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">20+</div>
+          <div class="stat__label">экспертов и спикеров</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">500+</div>
+          <div class="stat__label">участников</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">10+</div>
+          <div class="stat__label">стран-участниц</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROGRAM ============ -->
+  <section class="program section" id="program">
+    <div class="container">
+      <div class="section__tag">Расписание</div>
+      <h2 class="section__title">Программа</h2>
+
+      <div class="program__tabs">
+        <button class="program__tab program__tab--active" data-day="1">28 мая · День 1</button>
+        <button class="program__tab" data-day="2">29 мая · День 2</button>
+      </div>
+
+      <div class="program__day program__day--active" data-day="1">
+        <div class="timeline">
+          <div class="timeline__item">
+            <div class="timeline__time">09:00</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <div class="timeline__label">Регистрация</div>
+              <div class="timeline__desc">Регистрация участников, приветственный кофе</div>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__time">10:00</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <div class="timeline__label">Торжественное открытие</div>
+              <div class="timeline__desc">Приветственное слово ректора МГИМО и представителей Фонда Эндаумента</div>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__time">11:00</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <div class="timeline__label">Пленарная сессия</div>
+              <div class="timeline__desc">«Наука как двигатель международного диалога» — ключевые доклады</div>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__time">13:00</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <div class="timeline__label">Обед · Нетворкинг</div>
+              <div class="timeline__desc">Свободное общение участников</div>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__time">14:00</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <div class="timeline__label">Параллельные секции</div>
+              <div class="timeline__desc">Технологии · Международные отношения · Предпринимательство</div>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__time">17:00</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <div class="timeline__label">Мастер-классы</div>
+              <div class="timeline__desc">Практические занятия от экспертов-практиков</div>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__time">19:00</div>
+            <div class="timeline__dot timeline__dot--end"></div>
+            <div class="timeline__content">
+              <div class="timeline__label">Вечерний приём</div>
+              <div class="timeline__desc">Неформальное общение, культурная программа</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="program__day" data-day="2">
+        <div class="timeline">
+          <div class="timeline__item">
+            <div class="timeline__time">09:30</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <div class="timeline__label">Сбор участников</div>
+              <div class="timeline__desc">Начало второго дня, объявление расписания</div>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__time">10:00</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <div class="timeline__label">Конкурс проектов</div>
+              <div class="timeline__desc">Презентации исследовательских и предпринимательских проектов</div>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__time">12:00</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <div class="timeline__label">Панельная дискуссия</div>
+              <div class="timeline__desc">«Будущее науки и технологий глазами молодёжи»</div>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__time">13:30</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <div class="timeline__label">Обед</div>
+              <div class="timeline__desc">Обед, нетворкинг между участниками и экспертами</div>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__time">14:30</div>
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <div class="timeline__label">Подведение итогов конкурса</div>
+              <div class="timeline__desc">Объявление победителей и призёров, вручение наград</div>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__time">16:00</div>
+            <div class="timeline__dot timeline__dot--end"></div>
+            <div class="timeline__content">
+              <div class="timeline__label">Торжественное закрытие</div>
+              <div class="timeline__desc">Заключительная церемония, фото на память, объявление следующего фестиваля</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section__tag">Фотоархив</div>
+      <h2 class="section__title">Галерея</h2>
+      <p class="section__sub">Фотографии с прошедших фестивалей</p>
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--wide" data-index="0">
+          <img src="images/gallery/photo-1.jpg" alt="Фото 1" onerror="this.parentElement.classList.add('gallery__item--placeholder')" />
+          <div class="gallery__overlay"><span>+</span></div>
+        </div>
+        <div class="gallery__item" data-index="1">
+          <img src="images/gallery/photo-2.jpg" alt="Фото 2" onerror="this.parentElement.classList.add('gallery__item--placeholder')" />
+          <div class="gallery__overlay"><span>+</span></div>
+        </div>
+        <div class="gallery__item" data-index="2">
+          <img src="images/gallery/photo-3.jpg" alt="Фото 3" onerror="this.parentElement.classList.add('gallery__item--placeholder')" />
+          <div class="gallery__overlay"><span>+</span></div>
+        </div>
+        <div class="gallery__item" data-index="3">
+          <img src="images/gallery/photo-4.jpg" alt="Фото 4" onerror="this.parentElement.classList.add('gallery__item--placeholder')" />
+          <div class="gallery__overlay"><span>+</span></div>
+        </div>
+        <div class="gallery__item gallery__item--wide" data-index="4">
+          <img src="images/gallery/photo-5.jpg" alt="Фото 5" onerror="this.parentElement.classList.add('gallery__item--placeholder')" />
+          <div class="gallery__overlay"><span>+</span></div>
+        </div>
+        <div class="gallery__item" data-index="5">
+          <img src="images/gallery/photo-6.jpg" alt="Фото 6" onerror="this.parentElement.classList.add('gallery__item--placeholder')" />
+          <div class="gallery__overlay"><span>+</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox__close" id="lightboxClose">&times;</button>
+      <button class="lightbox__prev" id="lightboxPrev">&#8592;</button>
+      <button class="lightbox__next" id="lightboxNext">&#8594;</button>
+      <div class="lightbox__img-wrap">
+        <img src="" alt="" id="lightboxImg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DOCUMENTS ============ -->
+  <section class="docs section" id="docs">
+    <div class="container">
+      <div class="section__tag">Материалы</div>
+      <h2 class="section__title">Документы</h2>
+      <div class="docs__grid">
+        <a href="#" class="doc__card">
+          <div class="doc__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <div class="doc__info">
+            <div class="doc__name">Положение о фестивале</div>
+            <div class="doc__size">PDF · 340 КБ</div>
+          </div>
+          <div class="doc__arrow">→</div>
+        </a>
+        <a href="#" class="doc__card">
+          <div class="doc__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <div class="doc__info">
+            <div class="doc__name">Заявка на участие</div>
+            <div class="doc__size">DOCX · 85 КБ</div>
+          </div>
+          <div class="doc__arrow">→</div>
+        </a>
+        <a href="#" class="doc__card">
+          <div class="doc__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <div class="doc__info">
+            <div class="doc__name">Программа мероприятия</div>
+            <div class="doc__size">PDF · 210 КБ</div>
+          </div>
+          <div class="doc__arrow">→</div>
+        </a>
+        <a href="#" class="doc__card">
+          <div class="doc__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <div class="doc__info">
+            <div class="doc__name">Требования к проектам</div>
+            <div class="doc__size">PDF · 155 КБ</div>
+          </div>
+          <div class="doc__arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq section" id="faq">
+    <div class="container">
+      <div class="section__tag">Вопросы и ответы</div>
+      <h2 class="section__title">ЧаВо</h2>
+      <div class="faq__list">
+        <div class="faq__item faq__item--open">
+          <button class="faq__q">
+            Кто может участвовать в фестивале?
+            <span class="faq__icon"></span>
+          </button>
+          <div class="faq__a">
+            <p>В Фестивале могут принимать участие студенты бакалавриата, магистратуры и аспирантуры, а также молодые учёные и специалисты в возрасте от 18 лет. Иностранные участники приветствуются.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">
+            Как подготовиться к участию в Фестивале?
+            <span class="faq__icon"></span>
+          </button>
+          <div class="faq__a">
+            <p>Для участия необходимо: заполнить заявку на сайте, приложить краткое описание проекта или тезисы доклада (если планируете выступать), а также подтвердить участие по электронной почте. Все необходимые документы доступны в разделе «Документы».</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">
+            Кто является победителем и призёром Конкурса?
+            <span class="faq__icon"></span>
+          </button>
+          <div class="faq__a">
+            <p>Победителями признаются участники, занявшие 1-е место в каждой номинации по итогам оценки экспертного жюри. Призёрами являются участники, занявшие 2-е и 3-е места. Все победители и призёры получают дипломы и памятные награды.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">
+            Нужно ли платить за участие?
+            <span class="faq__icon"></span>
+          </button>
+          <div class="faq__a">
+            <p>Нет. Участие в Фестивале бесплатное. Мероприятие финансируется Фондом Эндаумента МГИМО МИД России.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">
+            Предусмотрено ли проживание для иногородних участников?
+            <span class="faq__icon"></span>
+          </button>
+          <div class="faq__a">
+            <p>Да, при наличии мест организаторы могут содействовать в размещении иногородних участников в общежитии кампуса. Уточняйте по электронной почте.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTS ============ -->
+  <section class="contacts section" id="contacts">
+    <div class="container">
+      <div class="section__tag">Связаться с нами</div>
+      <h2 class="section__title">Контакты</h2>
+      <div class="contacts__grid">
+        <div class="contacts__team">
+          <div class="contacts__person">
+            <div class="contacts__avatar">
+              <img src="images/organizer-1.jpg" alt="Организатор" onerror="this.style.display='none'" />
+              <span class="contacts__avatar-placeholder">ОГ</span>
+            </div>
+            <div class="contacts__person-info">
+              <div class="contacts__person-name">Организационный комитет</div>
+              <div class="contacts__person-role">Фестиваль МГИМО</div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__info">
+          <div class="contacts__row">
+            <span class="contacts__label">Адрес</span>
+            <span class="contacts__val">Одинцово, Новоспортивная, 3</span>
+          </div>
+          <div class="contacts__row">
+            <span class="contacts__label">Кампус</span>
+            <span class="contacts__val">МГИМО МИД России, Одинцовский филиал</span>
+          </div>
+          <div class="contacts__row">
+            <span class="contacts__label">Почта</span>
+            <a href="mailto:festival@mgimo.ru" class="contacts__val contacts__val--link">festival@mgimo.ru</a>
+          </div>
+          <div class="contacts__row">
+            <span class="contacts__label">Телефон</span>
+            <a href="tel:+74958189100" class="contacts__val contacts__val--link">+7 (495) 818-91-00</a>
+          </div>
+          <div class="contacts__row">
+            <span class="contacts__label">Даты</span>
+            <span class="contacts__val">28–29 мая 2025 года</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="register">
+        <div class="register__text">
+          <h3 class="register__title">Хотите принять участие?</h3>
+          <p class="register__sub">Заполните заявку — и мы свяжемся с вами в течение трёх рабочих дней</p>
+        </div>
+        <a href="mailto:festival@mgimo.ru?subject=Заявка на участие в Фестивале МГИМО" class="btn btn--primary btn--large">Подать заявку</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__nav">
+        <a href="#about">Описание</a>
+        <a href="#program">Программа</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#docs">Документы</a>
+        <a href="#faq">ЧаВо</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+      <div class="footer__logo">
+        <svg class="footer__building" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="30" width="100" height="28" fill="currentColor" opacity="0.6"/>
+          <rect x="25" y="18" width="70" height="14" fill="currentColor" opacity="0.7"/>
+          <rect x="45" y="8" width="30" height="12" fill="currentColor" opacity="0.8"/>
+          <rect x="55" y="2" width="10" height="8" fill="currentColor"/>
+          <rect x="18" y="36" width="8" height="10" fill="#0d0e1a"/>
+          <rect x="32" y="36" width="8" height="10" fill="#0d0e1a"/>
+          <rect x="46" y="36" width="8" height="10" fill="#0d0e1a"/>
+          <rect x="60" y="36" width="8" height="10" fill="#0d0e1a"/>
+          <rect x="74" y="36" width="8" height="10" fill="#0d0e1a"/>
+          <rect x="88" y="36" width="8" height="10" fill="#0d0e1a"/>
+          <rect x="32" y="24" width="6" height="6" fill="#0d0e1a"/>
+          <rect x="44" y="24" width="6" height="6" fill="#0d0e1a"/>
+          <rect x="56" y="24" width="6" height="6" fill="#0d0e1a"/>
+          <rect x="68" y="24" width="6" height="6" fill="#0d0e1a"/>
+          <rect x="80" y="24" width="6" height="6" fill="#0d0e1a"/>
+        </svg>
+      </div>
+      <div class="footer__copy">Copyright © 2025 МГИМО МИД России. Все права защищены</div>
+      <div class="footer__endowment">При поддержке Фонда Эндаумента МГИМО МИД России</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
