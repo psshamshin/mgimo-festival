@@ -670,6 +670,10 @@ ul { list-style: none; }
   max-width: 600px;
 }
 
+.endowment__text--mt {
+  margin-top: 12px;
+}
+
 /* ============================================================
    PROGRAM
    ============================================================ */
@@ -718,7 +722,8 @@ ul { list-style: none; }
 .timeline::before {
   content: '';
   position: absolute;
-  left: 77px;   /* center of dot: padding(100) - dot-left(28) + dot-radius(5) */
+  left: 77px;
+  transform: translateX(-50%);
   top: 12px;
   bottom: 12px;
   width: 1px;
@@ -1066,10 +1071,82 @@ ul { list-style: none; }
 }
 
 /* ============================================================
+   COUNTRIES
+   ============================================================ */
+.countries {
+  margin-top: 48px;
+  padding-top: 48px;
+  border-top: 1px solid var(--border);
+}
+
+.countries__label {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+.countries__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.countries__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 32px 20px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.countries__card:hover {
+  border-color: rgba(67,97,238,0.3);
+  background: rgba(67,97,238,0.04);
+}
+
+.countries__code {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  background: rgba(67,97,238,0.12);
+  border: 1px solid rgba(67,97,238,0.25);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.countries__name {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.countries__campus {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ============================================================
    CONTACTS
    ============================================================ */
 .contacts {
   background: var(--bg);
+}
+
+.contacts .section__title {
+  margin-bottom: 40px;
 }
 
 .contacts__grid {
@@ -1255,6 +1332,7 @@ ul { list-style: none; }
 }
 
 @media (max-width: 700px) {
+  .countries__list { grid-template-columns: 1fr; }
   .nav__links { display: none; }
   .nav__burger { display: flex; }
   .section { padding: 72px 0; }
