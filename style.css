@@ -811,6 +811,89 @@ ul { list-style: none; }
   color: var(--text-muted);
 }
 
+.timeline__location {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  background: rgba(67,97,238,0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.timeline__moderator {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 8px;
+  font-style: italic;
+  line-height: 1.55;
+}
+
+.timeline__report-list {
+  list-style: none;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.timeline__report-item {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.55;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.timeline__report-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.timeline__tz-note {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  padding: 12px 18px;
+  background: rgba(67,97,238,0.05);
+  border: 1px solid rgba(67,97,238,0.12);
+  border-radius: var(--radius);
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.timeline__tz-item strong {
+  color: var(--text);
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.timeline__item--break {
+  margin-bottom: 20px;
+}
+
+.timeline__item--break .timeline__content--break {
+  background: transparent;
+  border: none;
+  padding: 2px 0;
+}
+
+.timeline__item--break .timeline__label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.timeline__dot--break {
+  background: var(--bg3);
+  border: 1.5px dashed var(--text-muted);
+  box-shadow: none;
+}
+
 /* ============================================================
    GALLERY
    ============================================================ */
