@@ -624,6 +624,11 @@ ul { list-style: none; }
   margin: 0 auto;
 }
 
+.endowment__logo--lg {
+  max-height: 94px;
+  max-width: 260px;
+}
+
 .endowment__logo-placeholder {
   display: flex;
   flex-direction: column;
