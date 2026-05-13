@@ -616,8 +616,9 @@ ul { list-style: none; }
 
 .endowment__logo {
   width: auto;
-  height: 168px;
-  max-width: 224px;
+  height: auto;
+  max-width: 200px;
+  max-height: 72px;
   object-fit: contain;
   display: block;
   margin: 0 auto;
